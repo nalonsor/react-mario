@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,33 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar_link{
+  @apply block p-6 font-bold hover:text-yellow-500 
+}
+
+
+.navbar_link_bowser{
+  @apply border-2 border-yellow-400 font-bold p-2 px-6 rounded-full hover:bg-white hover:text-black transition duration-500
+}
+
+.navbar_link_buy{
+  @apply bg-red-600 text-white font-bold p-2 px-6 rounded-full hover:bg-white hover:text-black transition duration-500
+}
+
+.card{
+  @apply text-center bg-white 2xl:w-5/6 rounded-2xl overflow-hidden xl:w-4/5 hover:drop-shadow-2xl transition duration-500
+}
+
+.dot{
+  @apply h-3 w-3 bg-blue-600 rounded-full
+}
+
+.redBtn{
+  @apply xl:text-2xl my-4 inline-block py-2 px-7 bg-red-500 text-white font-black border-transparent border-8 rounded-3xl hover:border-gray-200 hover:bg-white hover:text-black transition duration-500
+}
+
+.yellowArrow{
+  @apply w-4 h-4 inline-block border-yellow-300 border-solid border-t-[5px] border-r-[5px] transition-all rotate-45 group-hover:border-red-500 group-hover:ml-4
 }
